@@ -1,0 +1,146 @@
+h1 {
+    font-weight: 800;
+    font-size: xx-large
+}
+
+h2 {
+    font-size: xx-large;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: large;
+    font-weight: 200;
+}
+
+nav {
+    padding-top: 7vh;
+}
+
+.active {
+    background-color: #827e07;
+    color: white;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    padding-bottom: 5vh;
+    display: block;
+}
+
+.facil {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.facil-block {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 15vw;
+    padding-right: 12vw;
+}
+
+.facil-img {
+    border-radius: 50%;
+    width: 15vw;
+    height: auto;
+}
+
+.facil-desc {
+    display: block;
+    font-size: x-large;
+}
+
+.btn-next {
+    width: 20%;
+    height: auto;
+    text-align: center;
+    float: right;
+    margin-right: 2vw;
+}
+
+.btn-prev {
+    width: 20%;
+    height: auto;
+    text-align: center;
+    margin-left: 2vw;
+}
+
+
+/* form */
+
+.message-show {
+    border: 2px;
+    border-style: solid;
+    width: 80%;
+    padding-top: 3vh;
+    padding-left: 5vh;
+    padding-bottom: 8vh;
+}
+
+.column-l {
+    flex: 25%;
+}
+
+.column-mid {
+    flex: 2%;
+    line-height: 150%;
+}
+
+.column-r {
+    flex: 73%;
+}
+
+.label-l {
+    line-height: 150%;
+}
+
+.label-r {
+    border-radius: 5px;
+    margin-bottom: 1vh;
+    width: 60%;
+}
+
+.label-rd {
+    border-radius: 5px;
+    margin-bottom: 1vh;
+    width: 61%;
+}
+
+.label-p {
+    width: 60%;
+    margin-bottom: 2vh;
+    padding-bottom: 10vh;
+    border: 2px;
+    border-style: solid;
+}
+
+.radio-k {
+    display: inline-block
+}
+
+.btn-submit {
+    width: 33vw;
+    height: 5vh;
+}
+
+
+/* form end*/
+
+.about-us {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        margin-top: 40vh;
+    }
+    .facil-desc {
+        font-size: small;
+    }
+}
