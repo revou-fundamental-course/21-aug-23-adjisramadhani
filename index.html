@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/a32f81155cd0d4f16d36aef74f7d2644.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Website | Home</title>
+<style type="text/css">
+    body {
+        margin: 0px;
+    }
+
+    hr {
+        border-width: 3px;
+    }
+
+    .container {
+        margin-top: 8vh;
+        margin-bottom: 5vh;
+        padding-left: 10vw;
+    }
+
+    .container-header {
+        margin-top: 8vh;
+        margin-bottom: 5vh;
+        padding-left: 10vw;
+    }
+
+    .center {
+        margin: auto;
+        width: 50%;
+        border: 3px solid black;
+    }
+
+    footer p {
+        text-align: right;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        padding-right: 2vw;
+    }
+
+
+    /* Flex divider */
+
+    .row {
+        display: flex;
+    }
+
+    .column {
+        flex: 50%;
+    }
+
+
+    /* Flex divider */
+
+
+    /* Navbar */
+
+    .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .navicon {
+        max-height: 5vh;
+        padding-left: 1vw;
+        padding-top: 0.5vh;
+    }
+
+    .navitem {
+        float: right;
+        height: auto;
+        width: auto;
+    }
+
+    .navitem a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .navitem a:hover {
+        background-color: #827e07;
+        color: white
+    }
+
+    /*.active {
+        background-color: rgb(2, 2, 26);
+        color: black;
+    }*/
+
+    .navtext {
+        display: none;
+    }
+
+    .prod-item-container {
+        height: 100%;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .prod-item {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* Navbar End */
+
+    @media only screen and (max-width: 600px) {
+        .navbar {
+            flex-direction: column;
+        }
+        .navitem {
+            width: 100%;
+            flex-direction: column;
+        }
+        .navicon {
+            display: none;
+        }
+        .navtext {
+            display: block;
+            text-align: center;
+            font-size: large;
+            color: yellow;
+        }
+        .header {
+            margin-top: 25vh;
+        }
+        .row-top {
+            flex-direction: column;
+        }
+        .message-form .btn-submit {
+            margin-top: 1vh;
+            width: 90%;
+        }
+        .message-show {
+            width: 75%;
+            flex-direction: column;
+            margin-top: 2vh;
+        }
+        .container {
+            margin-top: -5vh;
+            margin-left: -5vw;
+            margin-right: 5vw;
+        }
+        .container-header {
+            margin-top: 35vh;
+            margin-left: -5vw;
+            margin-right: 5vw;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <a href="index.html"><img class="navicon" src="assets/revou-icon.png"/></a>
+            <li class="navitem"><a href="message.html">Message Us</a></li>
+            <li class="navitem"><a href="achievement.html">Achievement</a></li>
+            <li class="navitem"><a href="profile.html">Our Profile</a></li>
+            <li class="navitem active"><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <section id="header">
+        <div class="container-header">
+            <div class="header">
+                <h2>Hi <span id="set-name">User</span>, Welcome To Website</h2>
+                <h5>Ini adalah website latihan pertama</h5>
+            </div>
+        </div>
+    </section>
+    <section id="top-banner">
+        <img class="banner img-slideshow" src="https://wallpaperaccess.com/full/1209573.jpg" />
+        <img class="banner img-slideshow" src="https://www.ndscs.edu/sites/default/files/page_images/Digital%20Backgrounds/Desktop%20Wallpapers/1366x768-12.jpg" />
+        <img class="banner img-slideshow" src="https://img2.wallspic.com/crops/6/3/5/2/32536/32536-social_group-friendship-education-youth-girl-1366x768.jpg" />
+        <button class="btn-prev" onclick="plusDivs(-1)">Previous</button>
+        <button class="btn-next" onclick="plusDivs(1)">Next</button>
+        <hr/>
+    </section>
+    <section id="facilitation">
+        <div class="container">
+            <h1>Our Facilitation</h1>
+            <ul class="facil">
+                <div class="facil-block">
+                    <img class="facil-img" src="https://www.arkansasteachercorps.org/wp-content/uploads/2023/04/CadeVallee_1200x1200-820x820.jpg" />
+                    <span class="facil-desc">Professional Teacher</span>
+                </div>
+                <div class="facil-block">
+                    <img class="facil-img" src="https://wembley-hotel.com/wp-content/uploads/sites/18/2022/11/wembley3-820x820.jpg" />
+                    <span class="facil-desc">Sport Field</span>
+                </div>
+                <div class="facil-block">
+                    <img class="facil-img" src="https://brightspotcdn.byu.edu/dims4/default/7cc1b7d/2147483647/strip/true/crop/820x820+1057+0/resize/1200x1200!/quality/90/?url=https%3A%2F%2Fbrigham-young-brightspot.s3.amazonaws.com%2F51%2F63%2Fc10111554e448be23860651f0272%2F1909-01-0111.jpg" />
+                    <span class="facil-desc">Classroom</span>
+                </div>
+            </ul>
+        </div>
+        <hr/>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h1 class="about-us" style="text-align: center;">About Us</h1><br/>
+            <p style="text-align: center;">
+                Welcome to our school.
+            </p>
+        </div>
+        <hr/>
+    </section>
+    <section id="vision">
+        <div class="container">
+            <h1>Vision and Mission</h1>
+            <h2>Vision:</h2>
+            <p style="text-align: center;font-size: large;">
+                This is our vision.
+            </p>
+            <h2>Mission:</h2>
+            <p style="text-align: center;font-size: large;">
+                This is our mission
+            </p>
+        </div>
+        <hr/>
+    </section>
+    <section id="message-us">
+        <div class="container">
+            <h1>Message Us</h1>
+            <div class="row row-top">
+                <div class="column">
+                    <div class="message-form">
+                        <form id="exec-form" name="exec-form" onsubmit="return execForm()">
+                            <div class="row">
+                                <div class="column-l">
+                                    <label class="label-l" for="nama">Nama</label><br>
+                                    <label class="label-l" for="tanggal">Tanggal lahir</label><br>
+                                    <label class="label-l" for="kelamin">Jenis kelamin</label><br>
+                                    <label class="label-l" for="pesan">Pesan</label><br>
+                                </div>
+                                <div class="column-mid">
+                                    <b>: </b><br/>
+                                    <b>: </b><br/>
+                                    <b>: </b><br/>
+                                    <b>: </b>
+                                </div>
+                                <div class="column-r">
+                                    <input class="label-r" type="text" id="nama" name="nama" placeholder="Nama" required><br>
+                                    <input class="label-rd" type="date" id="tanggal" placeholder="dd-mm-yyyy" name="tanggal" required><br>
+                                    <input class="radio-k" type="radio" id="laki" name="kelamin" value="laki" required>
+                                    <label for="laki">Laki-Laki</label>
+                                    <input class="radio-k" type="radio" id="perempuan" name="kelamin" value="perempuan" required>
+                                    <label for="perempuan">Perempuan</label><br>
+                                    <input class="label-p" type="text" id="pesan" name="pesan" placeholder="Pesan" required><br>
+                                </div>
+                            </div>
+                            <input class="btn-submit" type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="message-show">
+                        <p>
+                            <b>Current time :</b> <span id="current-time-show"></span>
+                            <br/>
+                            <br/>
+                            <b>Nama :</b> <span id="name-show"></span>
+                            <br/>
+                            <b>Tanggal Lahir :</b> <span id="birthdate-show"></span>
+                            <br/>
+                            <b>Jenis Kelamin :</b> <span id="gender-show"></span>
+                            <br/>
+                            <b>Pesan :</b> <span id="message-show"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+    </section>
+</body>
+
+<footer>
+    <p>Created By Adjis Ramadhani</p>
+    <hr/>
+</footer>
+
+<script type="text/javascript" src="js/script.js?1"></script>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/a32f81155cd0d4f16d36aef74f7d2644.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Website | Our Profile</title>
+<style type="text/css">
+    .splash-text {
+        font-size: 5em;
+    }
+
+    .center {
+        margin-top: 35%;
+        border: none;
+    }
+
+    .join-now {
+        font-size: 3em;
+        text-align: center;
+        background-image: url("assets/profile/join-us-today.png");
+    }
+
+    .switch1 {
+        display: flex;
+    }
+
+    .switch2 {
+        display: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .splash-text {
+            margin-left: 20px;
+            margin-top: 36vh;
+            font-size: 3em;
+            text-align: center;
+        }
+        .row {
+            flex-direction: column;
+        }
+        .column {
+            width: 100%;
+            flex-direction: column;
+        }
+        .switch1 {
+            display: none;
+        }
+        .switch2 {
+            display: contents;
+        }
+    }
+    body {
+        margin: 0px;
+    }
+
+    hr {
+        border-width: 3px;
+    }
+
+    .container {
+        margin-top: 8vh;
+        margin-bottom: 5vh;
+        padding-left: 10vw;
+    }
+
+    .center {
+        margin: auto;
+        width: 50%;
+        border: 3px solid black;
+    }
+
+    footer p {
+        text-align: right;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        padding-right: 2vw;
+    }
+
+
+    /* Flex divider */
+
+    .row {
+        display: flex;
+    }
+
+    .column {
+        flex: 50%;
+    }
+
+
+    /* Flex divider */
+
+
+    /* Navbar */
+
+    .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .navicon {
+        max-height: 5vh;
+        padding-left: 1vw;
+        padding-top: 0.5vh;
+    }
+
+    .navitem {
+        float: right;
+        height: auto;
+        width: auto;
+    }
+
+    .navitem a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .navitem a:hover {
+        background-color: #827e07;
+        color: white
+    }
+
+    /*.active {
+        background-color: rgb(2, 2, 26);
+        color: black;
+    }*/
+
+    .navtext {
+        display: none;
+    }
+
+    .prod-item-container {
+        height: 100%;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .prod-item {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* Navbar End */
+
+    @media only screen and (max-width: 600px) {
+        .navbar {
+            flex-direction: column;
+        }
+        .navitem {
+            width: 100%;
+            flex-direction: column;
+        }
+        .navicon {
+            display: none;
+        }
+        .navtext {
+            display: block;
+            text-align: center;
+            font-size: large;
+            color: yellow;
+        }
+        .header {
+            margin-top: 25vh;
+        }
+        .row-top {
+            flex-direction: column;
+        }
+        .message-form .btn-submit {
+            margin-top: 1vh;
+            width: 90%;
+        }
+        .message-show {
+            width: 75%;
+            flex-direction: column;
+            margin-top: 2vh;
+        }
+        .container {
+            margin-top: -5vh;
+            margin-left: -5vw;
+            margin-right: 5vw;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <section id="navbar">
+        <ul class="navbar">
+            <a href="index.html"><img class="navicon" src="assets/revou-icon.png" alt="revoU icon" /></a>
+            <li class="navitem"><a href="message.html">Message Us</a></li>
+            <li class="navitem"><a href="achievement.html">Achievement</a></li>
+            <li class="navitem active"><a href="profile.html">Our Profile</a></li>
+            <li class="navitem"><a href="index.html">Home</a></li>
+        </ul>
+    </section>
+
+    <section id="splash">
+        <div class="container" style="padding-left:2vw;">
+            <div class="row">
+                <div class="column" style="margin-top:10vh;">
+                    <p class="splash-text">
+                        <b><u> Join with us </u><b>
+                    </p>
+                </div>
+                <div class="column">
+                    <img style="width:100%" src="https://img2.wallspic.com/crops/6/3/5/2/32536/32536-social_group-friendship-education-youth-girl-1366x768.jpg" />
+                </div>
+            </div>
+        </div>
+        <hr/>
+    </section>
+
+    <section id="join">
+        <div class="join-now ">
+            <img href="assets/profile/join-us-today.png " /> <a href=message.html>CLICK THIS</a>
+        </div>
+        <hr/>
+    </section>
+</body>
+
+</html>
